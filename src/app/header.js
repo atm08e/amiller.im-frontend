@@ -24,12 +24,12 @@ export class Header extends Component {
     return (
       <header style={styles.header}>
         <p style={styles.title}>
-          <a href="https://github.com/atm08e" target="_blank">
+          <a href="https://amiller.im" target="_blank">
             Amiller.im
           </a>
         </p>
         <p style={styles.date}>
-          Last compiledon Tue Aug 02 2016 09:36:34 GMT-0400 (EDT)
+
         </p>
       </header>
     );

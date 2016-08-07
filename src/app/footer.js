@@ -12,13 +12,14 @@ const styles = {
 
 export class Footer extends Component {
   render() {
-    return (
-      <footer style={styles.footer}>
-        Built with beer
-        <a href="https://github.com/atm08e">
-          Amiller.im Source Code Available
-        </a>
-      </footer>
-    );
+    return null;
+    // return (
+    //   <footer style={styles.footer}>
+    //     Built with beer
+    //     <a href="https://github.com/atm08e">
+    //       Amiller.im Source Code Available
+    //     </a>
+    //   </footer>
+    // );
   }
 }

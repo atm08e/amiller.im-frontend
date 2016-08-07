@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-// 
+//
 // const styles = {
 //   title: {
 //     display: 'flex',
@@ -29,7 +29,7 @@ import React, {Component} from 'react';
 
 export class Title extends Component {
   render() {
-    return;
+    return null;
     //(
       // <div style={styles.title}>
       //   <h1 style={styles.h1}>'Allo, 'Allo!</h1>
