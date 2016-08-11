@@ -1,130 +1,160 @@
 import React, {Component} from 'react';
-import {Link} from 'react-bootstrap'
-import {Navbar, NavItem, DropdownButton, MenuItem, Row, Col, Grid, Jumbotron} from 'react-bootstrap'
-import {ButtonGroup, Button} from 'react-bootstrap'
-import ImageGallery from 'react-photo-gallery';
-import {Header} from './header';
-// import {Title} from './title';
-//import {Techs} from './techs/techs';
-// import {Blogs} from './blogs/blogs'
-import {Footer} from './footer';
-const styles = {
-  container: {
-    display: 'flex',
-    flexDirection: 'column',
-    minHeight: '100%'
-  },
-  main: {
-    flex: 1,
-    display: 'flex',
-    flexDirection: 'column'
-  }
-};
+import {Navbar, NavItem, Row, Col, Grid, PageHeader, Button, ListGroup, ListGroupItem, Well, Image} from 'react-bootstrap'
 
-
-
-const PHOTO_SET = [
-    {
-      src: 'http://lorempixel.com/1000/600/nature/1/',
-      thumbnail: 'http://lorempixel.com/250/150/nature/1/',
-      originalClass: 'featured-slide',
-      thumbnailClass: 'featured-thumb',
-      originalAlt: 'original-alt',
-      thumbnailAlt: 'thumbnail-alt'
-
-    },
-    {
-      src: 'http://lorempixel.com/1000/600/nature/2/',
-      thumbnail: 'http://lorempixel.com/250/150/nature/2/'
-    },
-    {
-      src: 'http://lorempixel.com/1000/600/nature/3/',
-      thumbnail: 'http://lorempixel.com/250/150/nature/3/'
-    }
-];
-
-export class Sample extends Component {
-    render() {
-    return (
-        <Gallery photos={PHOTO_SET} />
-    );
-    }
-}
-
-export class ButtonGroupInstance extends Component {
-  render() {
-    return(
-      <ButtonGroup vertical>
-        <Button>Button</Button>
-        <Button>Button</Button>
-        <DropdownButton title="Dropdown" id="bg-vertical-dropdown-1">
-          <MenuItem eventKey="1">Dropdown link</MenuItem>
-          <MenuItem eventKey="2">Dropdown link</MenuItem>
-        </DropdownButton>
-        <Button>Button</Button>
-        <Button>Button</Button>
-        <DropdownButton title="Dropdown" id="bg-vertical-dropdown-2">
-          <MenuItem eventKey="1">Dropdown lindk</MenuItem>
-          <MenuItem eventKey="2">Dropdown link</MenuItem>
-        </DropdownButton>
-        <DropdownButton title="Dropdown" id="bg-vertical-dropdown-3">
-          <MenuItem eventKey="1">Dropdown link</MenuItem>
-          <MenuItem eventKey="2">Dropdown link</MenuItem>
-        </DropdownButton>
-      </ButtonGroup>
-    );
-  }
-}
-
-export class MainContent extends Component{
+export class SocialMediaInstance extends Component{
   render(){
     return(
-      <div>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac tristique dolor. Etiam sit amet congue lorem. Nam ut sollicitudin tortor. Etiam non lorem nisi. Interdum et malesuada fames ac ante ipsum primis in faucibus. Curabitur dignissim nunc et egestas feugiat. Duis tincidunt metus ut massa rhoncus elementum. Vestibulum nec fermentum lacus. Aliquam vel condimentum tortor, non varius turpis. Integer dictum ornare elementum.
-      </div>
+      <Row>
+        <PageHeader>
+          Social Media
+        </PageHeader>
+      </Row>
     );
   }
 }
 
-export class JumboTronInstance extends Component {
+export class MailingListInstance extends Component{
   render(){
     return(
-      <Jumbotron>
-        <h1>Hello, world!</h1>
-        <p>This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-        <p><Button bsStyle="primary">Learn more</Button></p>
-      </Jumbotron>
+      <Row>
+        <PageHeader>
+          Mailing List
+        </PageHeader>
+        <small> Join the <a>email list</a> to receive updates on the website automatically </small>
+      </Row>
+    );
+  }
+}
+
+export class TestimonalsInstance extends Component{
+  render(){
+    return(
+      <Row>
+        <PageHeader>
+          Testimonals
+        </PageHeader>
+        <Well>"Drew is definitely the coolest person I know" - Drew Miller</Well>
+      </Row>
+    );
+  }
+}
+
+export class LatestNewsInstance extends Component{
+  render(){
+    return(
+      <Row>
+        <PageHeader>
+          Latest News
+        </PageHeader>
+        <ListGroup>
+          <ListGroupItem href="#link1">8/1/16 - Working to get the website completed!</ListGroupItem>
+          <ListGroupItem href="#link1">7/23/16 - Revisting the javascript ecosystem!</ListGroupItem>
+          <ListGroupItem href="#link1">7/07/16 - Experimenting with python3.5</ListGroupItem>
+        </ListGroup>
+      </Row>
+    );
+  }
+}
+
+export class SeeAlsoInstance extends Component{
+  render(){
+    return(
+      <Row>
+        <small> See also: </small> <a>External Content</a> <a>Travel History</a> <a>Upcoming Events</a>
+      </Row>
+    );
+  }
+}
+
+export class NavTwoInstance extends Component{
+  render(){
+    return(
+      <Row>
+         <Button bsStyle="primary" bsSize="large">Software</Button>
+         <Button bsStyle="primary" bsSize="large">Snowboarding</Button>
+         <Button bsStyle="primary" bsSize="large">Fishing</Button>
+         <Button bsStyle="primary" bsSize="large">Music</Button>
+      </Row>
+    );
+  }
+}
+
+export class AboutInstance extends Component{
+  render(){
+    return(
+      <Row>
+        <h3>
+          Drew Miller is a software engineer, hacker, snowboarder, and fisherman. <br/>
+          <small>His dream is to build amazing software that helps make people's live better and easier. Currently, he is working for the PaaS team at Ultimate Software. He is well-known for gathering detailed software requirments and delivering performant projects.</small>
+        </h3>
+      </Row>
+    );
+  }
+}
+
+export class SplashImageInstance extends Component{
+  render(){
+    return(
+      <Row>
+        <Col md={4}>
+        <Image src="/me.jpg" rounded responsive />
+        </Col>
+      </Row>
+    );
+  }
+}
+
+export class TitleInstance extends Component{
+  render(){
+    return(
+      <Row>
+        <PageHeader>
+          <large>Drew Miller</large>
+        </PageHeader>
+      </Row>
+    );
+  }
+}
+
+export class NavInstance extends Component{
+  render(){
+    return(
+      <Row>
+        <Navbar>
+          <NavItem>Software</NavItem>
+          <NavItem>Snowboarding</NavItem>
+          <NavItem>Fishing</NavItem>
+          <NavItem>Music</NavItem>
+          <NavItem>Movies & TV</NavItem>
+        </Navbar>
+      </Row>
     );
   }
 }
 
 export class GridInstance extends Component {
   render(){
-      return(
-        <Grid>
-          <Row className="show-grid">
-            <Col xs={16}>
-              <JumboTronInstance/>
-            </Col>
-          </Row>
-          <Row className="show-grid">
-            <Col xs={3}>
-              <ButtonGroupInstance/>
-            </Col>
-            <Col xs={9}>
-              <MainContent/>
-
-            </Col>
-          </Row>
-        </Grid>
-      );
+    return(
+      <Grid>
+        <TitleInstance/>
+        <NavInstance/>
+        <SplashImageInstance/>
+        <AboutInstance/>
+        <NavTwoInstance/>
+        <SeeAlsoInstance/>
+        <LatestNewsInstance/>
+        <TestimonalsInstance/>
+        <MailingListInstance/>
+        <SocialMediaInstance/>
+      </Grid>
+    );
   }
 }
 
 export class Main extends Component {
   render() {
     return (
-      <SampleGallery/>
+        <GridInstance/>
     );
   }
 }
