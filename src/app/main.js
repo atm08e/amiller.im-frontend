@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import {Navbar, NavItem, Row, Col, Grid, PageHeader, Button, ListGroup, ListGroupItem, Well, Image, Nav} from 'react-bootstrap'
+import {Grid} from 'react-bootstrap';
+
 import {TitleInstance} from './components/title-instance'
 import {NavInstance} from './components/nav-instance'
 import {SplashImageInstance} from './components/splash-image-instance'
