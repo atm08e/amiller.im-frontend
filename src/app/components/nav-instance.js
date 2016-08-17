@@ -1,9 +1,13 @@
 import React, {Component} from 'react';
+import ReactDOM from 'react-dom';
 import {Row, Col, Navbar, Nav, NavItem} from 'react-bootstrap';
+
+import {Software} from '../software'
 
 export class NavInstance extends Component {
   onSoftwareClick() {
-    alert("softwareclick")
+    const el = document.getElementById('root');
+    ReactDOM.render(<Software/>, el);
   }
   onSnowboardClick() {
     alert("softwareclick")
@@ -22,7 +26,7 @@ export class NavInstance extends Component {
         <Navbar>
           <Nav>
             <NavItem onClick={this.onSoftwareClick}>Software</NavItem>
-            <NavItem onClick={this.onSnowboardClick}>Snowboarding</NavItem>
+            <NavItem href='/snowboaring'>Snowboarding</NavItem>
             <NavItem onClick={this.onFishingClick}>Fishing</NavItem>
             <NavItem onClick={this.onMusicClick}>Music</NavItem>
           </Nav>

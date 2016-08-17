@@ -7,7 +7,7 @@ export class TitleInstance extends Component{
         <Col md={4}/>
         <Col md={4}>
           <PageHeader>
-            <center><large>Drew Miller</large></center>
+            <center><large><a href="/">Drew Miller</a></large></center>
           </PageHeader>
         </Col>
         <Col md={4}/>
