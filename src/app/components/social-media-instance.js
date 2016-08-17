@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Row, Col} from 'react-bootstrap'
-export class SocialMediaInstance extends Component{
+import {Row, Col} from 'react-bootstrap';
+export class SocialMediaInstance extends Component {
   render(){
     return(
       <Row>

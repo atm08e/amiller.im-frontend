@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {Row, Col} from 'react-bootstrap'
+import {Row, Col, Button} from 'react-bootstrap';
 export class NavTwoInstance extends Component{
   render(){
     return(

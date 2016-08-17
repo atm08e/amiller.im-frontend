@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Row, Col, PageHeader} from 'react-bootstrap'
+import {Row, Col, PageHeader} from 'react-bootstrap';
 export class TitleInstance extends Component{
   render(){
     return(

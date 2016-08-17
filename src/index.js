@@ -6,7 +6,7 @@ import {Router, Route, browserHistory} from 'react-router';
 
 import {Main} from './app/main';
 
-import './index.scss';
+//import './index.scss';
 
 ReactDOM.render(
   <Router history={browserHistory}>

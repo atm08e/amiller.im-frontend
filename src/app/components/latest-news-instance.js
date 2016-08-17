@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 
-import {Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap'
+import {Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 export class LatestNewsInstance extends Component{
   render(){
     return(

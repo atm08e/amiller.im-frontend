@@ -1,8 +1,7 @@
 import React, {Component} from 'react';
-import {Row, Col, Navbar, Nav, NavItem} from 'react-bootstrap'
-import {Snowboarding} from './snowboarding'
+import {Row, Col, Navbar, Nav, NavItem} from 'react-bootstrap';
 
-export class NavInstance extends Component{
+export class NavInstance extends Component {
   onSoftwareClick() {
     alert("softwareclick")
   }

@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {Row, Col,Well} from 'react-bootstrap'
-export class TestimonalsInstance extends Component{
+import {Row, Col, Well} from 'react-bootstrap';
+export class TestimonalsInstance extends Component {
   render(){
     return(
       <Row>
