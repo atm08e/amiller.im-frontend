@@ -1,6 +1,6 @@
 ## Synopsis
 
-This project is the frontend for my personal blog/website served by amiller-python backend. It displays blog posts, snowboarding trip pictures, fishing pictures, and my music taste. Pull requests welcome! :)
+This project is a nodejs-react frontend for my personal blog/website served by amiller-python backend. It displays blog posts, snowboarding trip pictures, fishing pictures, and my music taste. Pull requests welcome! :)
 
 
 ## Motivation
@@ -12,6 +12,23 @@ The purpose of this project is to get familiar with nodejs ecosystem and react f
 
 There is a makefile and run.sh script included to get you going. But they are not needed if you are already familiar with nodejs projects. Simply do an npm install && ./node_modules/gulp/bin/gulp.js serve
 
+
+## TODO
+You'll notice that alot of functionality is missing. Trying to do as much wire framing as I can and then I will switch over to the backend.
+
+Pipeline for easy updating and deployments
+
+Tooo much white, needs some color. Some type of bootstrap themeing would be the best
+
+Gallery work for snowboarding and fishing
+
+Blog system
+
+Bootstrap and jQuery included the node way and not in index.html
+
+Google analytics integration
+
+Env file for secret info like DB passwords and such
 
 ## Contributors
 
