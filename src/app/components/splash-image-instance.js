@@ -6,7 +6,7 @@ export class SplashImageInstance extends Component {
       <Row>
         <Col md={4}/>
         <Col md={4}>
-          <Image src="/me_300x401.jpg" rounded responsive />
+          <Image src="/me_390_521.jpg" rounded responsive />
         </Col>
         <Col md={4}/>
       </Row>
