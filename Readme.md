@@ -13,7 +13,7 @@ The purpose of this project is to get familiar with nodejs ecosystem and react f
 There is a makefile and run.sh script included to get you going. But they are not needed if you are already familiar with nodejs projects. Simply do an npm install && ./node_modules/gulp/bin/gulp.js serve
 
 
-## TODO
+## TODO (frontend and backend mixed)
 You'll notice that alot of functionality is missing. Trying to do as much wire framing as I can and then I will switch over to the backend.
 
 Pipeline for easy updating and deployments
@@ -22,13 +22,25 @@ Tooo much white, needs some color. Some type of bootstrap themeing would be the 
 
 Gallery work for snowboarding and fishing
 
-Blog system
+The Blog system, no DB.
+
+The Blog comment sections, needs blackholeDB. :)
 
 Bootstrap and jQuery included the node way and not in index.html
 
 Google analytics integration
 
 Env file for secret info like DB passwords and such
+
+Music page needs last.fm and spotify integration
+
+Some type of "Shell process" that can take images from a folder, scale them to 4 different sizes (for the gallery), upload them to AWS, and adds a gallery json block to the gallery json array file.
+
+Mailing list sign up, email, and auto notify functionality. Should trigger on a latest_news posts
+
+latest news should only show the last N posts, but be pageable/drop openable
+
+Gallery expiring link integration
 
 ## Contributors
 
