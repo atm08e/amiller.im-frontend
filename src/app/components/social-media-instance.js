@@ -1,8 +1,8 @@
 import React, {Component} from 'react';
 import {Row, Col} from 'react-bootstrap';
 export class SocialMediaInstance extends Component {
-  render(){
-    return(
+  render() {
+    return (
       <Row>
         <Col md={3}/>
         <Col md={6}>

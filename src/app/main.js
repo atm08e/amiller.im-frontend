@@ -12,8 +12,8 @@ import {MailingListInstance} from './components/mailing-list-instance';
 import {SocialMediaInstance} from './components/social-media-instance';
 
 export class GridInstance extends Component {
-  render(){
-    return(
+  render() {
+    return (
       <Grid>
         <TitleInstance/>
         <NavInstance/>
@@ -32,7 +32,7 @@ export class GridInstance extends Component {
 export class Main extends Component {
   render() {
     return (
-        <GridInstance/>
+      <GridInstance/>
     );
   }
 }

@@ -1,34 +1,44 @@
 import React, {Component} from 'react';
+import {LinkContainer} from 'react-router-bootstrap'
 import ReactDOM from 'react-dom';
 import {Row, Col, Navbar, Nav, NavItem} from 'react-bootstrap';
 
-import {Software} from '../software'
-
 export class NavInstance extends Component {
-  onSoftwareClick() {
+  handleSoftwareClick() {
     const el = document.getElementById('root');
     ReactDOM.render(<Software/>, el);
   }
-  onSnowboardClick() {
-    alert("softwareclick")
+  handleSnowboardClick() {
+    alert("softwareclick");
   }
-  onFishingClick() {
-    alert("Fishingclick")
+  handleFishingClick() {
+    alert("Fishingclick");
   }
-  onMusicClick() {
-    alert("Musicclick")
+  handleMusicClick() {
+    alert("Musicclick");
   }
-  render(){
-    return(
+  render() {
+    return (
       <Row>
         <Col md={3}/>
         <Col md={6}>
         <Navbar>
           <Nav>
-            <NavItem onClick={this.onSoftwareClick}>Software</NavItem>
-            <NavItem href='/snowboaring'>Snowboarding</NavItem>
-            <NavItem onClick={this.onFishingClick}>Fishing</NavItem>
-            <NavItem onClick={this.onMusicClick}>Music</NavItem>
+          <LinkContainer to={{ pathname: '/blog' }}>
+            <NavItem>Blog</NavItem>
+          </LinkContainer>
+          <LinkContainer to={{ pathname: '/snowboarding' }}>
+            <NavItem>Snowboarding</NavItem>
+          </LinkContainer>
+          <LinkContainer to={{ pathname: '/fishing' }}>
+            <NavItem>Fishing</NavItem>
+          </LinkContainer>
+          <LinkContainer to={{ pathname: '/music' }}>
+            <NavItem>Music</NavItem>
+          </LinkContainer>
+          <LinkContainer to={{ pathname: '/about' }}>
+            <NavItem>About</NavItem>
+          </LinkContainer>
           </Nav>
         </Navbar>
         </Col>

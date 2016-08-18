@@ -2,8 +2,8 @@ import React, {Component} from 'react';
 
 import {Row, Col, ListGroup, ListGroupItem} from 'react-bootstrap';
 export class LatestNewsInstance extends Component{
-  render(){
-    return(
+  render() {
+    return (
       <Row>
         <Col md={3}/>
         <Col md={6}>

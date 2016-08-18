@@ -1,10 +1,9 @@
 import React, {Component} from 'react';
 
 import {Row, Col, Button} from 'react-bootstrap';
-export class NavTwoInstance extends Component{
-  render(){
-    return(
-
+export class NavTwoInstance extends Component {
+  render() {
+    return (
       <Row>
         <Col md={3}/>
         <Col md={6}>
@@ -15,7 +14,6 @@ export class NavTwoInstance extends Component{
        </Col>
        <Col md={3}/>
       </Row>
-
     );
   }
 }
