@@ -9,7 +9,6 @@ import {Blog} from './app/blog';
 import {Snowboarding} from './app/snowboarding';
 import {Fishing} from './app/fishing';
 import {Music} from './app/music';
-import {About} from './app/about';
 
 ReactDOM.render(
   <Router history={browserHistory}>
@@ -18,7 +17,6 @@ ReactDOM.render(
     <Route path="/snowboarding" component={Snowboarding}/>
     <Route path="/fishing" component={Fishing}/>
     <Route path="/music" component={Music}/>
-    <Route path="/about" component={About}/>
   </Router>,
   document.getElementById('root')
 );

@@ -6,7 +6,9 @@ export class SocialMediaInstance extends Component {
       <Row>
         <Col md={3}/>
         <Col md={6}>
-          <h3>Social</h3>
+          <center>
+            <h3>Social</h3>
+          </center>
             Facebook
             Gmail
             Instagram

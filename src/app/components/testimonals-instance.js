@@ -6,9 +6,11 @@ export class TestimonalsInstance extends Component {
       <Row>
         <Col md={3}/>
         <Col md={6}>
+          <center>
           <h3>
             Testimonals
           </h3>
+          </center>
           <Row>
             <Well>"Drew is definitely the coolest person I know" - Drew Miller</Well>
           </Row>

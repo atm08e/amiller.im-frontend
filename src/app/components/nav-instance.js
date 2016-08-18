@@ -20,8 +20,8 @@ export class NavInstance extends Component {
   render() {
     return (
       <Row>
-        <Col md={4}/>
-        <Col md={4}>
+        <Col md={3}/>
+        <Col md={6}>
         <Navbar>
           <Nav>
           <LinkContainer to={{ pathname: '/blog' }}>
@@ -36,10 +36,13 @@ export class NavInstance extends Component {
           <LinkContainer to={{ pathname: '/music' }}>
             <NavItem>Music</NavItem>
           </LinkContainer>
+          <LinkContainer to={{ pathname: '/' }}>
+            <NavItem>About</NavItem>
+          </LinkContainer>
           </Nav>
         </Navbar>
         </Col>
-        <Col md={4}/>
+        <Col md={3}/>
       </Row>
     );
   }

@@ -10,8 +10,8 @@ export class AboutInstance extends Component{
         <h3>
           <center>Drew Miller is a software engineer, hacker, snowboarder, and fisherman. </center>
           <br/>
-          <center><small>His dream is to build software that helps make
-            people's lives amazing and easier. Currently he is helping to build a
+          <center><small>His dream is to build software that helps
+            people and makes their lives easier and more fulfilled. Currently, he is helping to build a
             new PaaS system at Ultimate Software. He is well-known for gathering
             detailed software requirments, architeching services, and delivering performant solutions on time.</small></center>
         </h3>
