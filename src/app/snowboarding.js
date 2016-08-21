@@ -1,33 +1,45 @@
 import React, {Component} from 'react';
 import {Grid} from 'react-bootstrap';
 import Gallery from 'react-photo-gallery';
+import axios from 'axios';
+
 
 import {TitleInstance} from './components/title-instance';
 import {NavInstance} from './components/nav-instance';
 
+var SnowGallery = React.createClass({
+  getInitialState: function() {
+    console.log("Running Init");
+    return {
+      gallery_set: []
+    }
+  },
 
-const PHOTO_SET = [
-  {
-    src: 'http://snowbrains.com/wp-content/uploads/2014/01/url-2.jpeg',
-    width: 1920,
-    height: 1080,
-    aspectRatio: 1,
-    lightboxImage:{
-      src: 'http://snowbrains.com/wp-content/uploads/2014/01/url-2.jpeg',
-        srcset: [
-          'http://snowbrains.com/wp-content/uploads/2014/01/url-2.jpeg 1920w'
-        ]
-      }
-  }
-];
+  componentDidMount: function () {
+    console.log("Component Did Mount");
+    var _this = this;
+    this.serverRequest =
+      axios
+        .get("http://localhost:8088/snowboarding")
+        .then(function(result) {
+          _this.setState({
+            gallery_set: result.data
+          });
+        });
+  },
 
-export class SnowGallery extends Component {
-  render() {
+  componentWillUnmount: function() {
+    // TODO
+    console.log("Component will unmount");
+  },
+
+  render: function () {
+    var _this = this;
       return (
-          <Gallery photos={PHOTO_SET} />
+          <Gallery photos={this.state.gallery_set}/>
       );
     }
-}
+});
 export class GridInstance extends Component {
   render() {
     return (
