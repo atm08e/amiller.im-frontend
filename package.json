@@ -1,6 +1,7 @@
 {
   "dependencies": {
     "axios": "^0.9.1",
+    "nodelint": "^0.6.2",
     "react": "^15.3",
     "react-bootstrap": "^0.30.2",
     "react-dom": "^15.3",

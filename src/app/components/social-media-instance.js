@@ -9,11 +9,11 @@ export class SocialMediaInstance extends Component {
           <center>
             <h3>Social</h3>
           </center>
-            Facebook
-            Gmail
-            Instagram
-            Snapchat
-            twitter
+          Facebook
+          Gmail
+          Instagram
+          Snapchat
+          twitter
         </Col>
         <Col md={3}/>
       </Row>

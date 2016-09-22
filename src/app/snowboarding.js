@@ -2,14 +2,12 @@ import React, {Component} from 'react';
 import {Grid} from 'react-bootstrap';
 import Gallery from 'react-photo-gallery';
 import axios from 'axios';
-
-
 import {TitleInstance} from './components/title-instance';
 import {NavInstance} from './components/nav-instance';
 
 var SnowGallery = React.createClass({
-  getInitialState: function() {
-    console.log("Running Init");
+  getInitialState: function () {
+    //console.log("Running Init");
     return {
       gallery_set: []
     }
@@ -21,24 +19,24 @@ var SnowGallery = React.createClass({
     this.serverRequest =
       axios
         .get("http://localhost:8088/snowboarding")
-        .then(function(result) {
+        .then(function (result) {
           _this.setState({
             gallery_set: result.data
           });
         });
   },
 
-  componentWillUnmount: function() {
+  componentWillUnmount: function () {
     // TODO
     console.log("Component will unmount");
   },
 
   render: function () {
     var _this = this;
-      return (
-          <Gallery photos={this.state.gallery_set}/>
-      );
-    }
+    return (
+      <Gallery photos={this.state.gallery_set}/>
+    );
+  }
 });
 export class GridInstance extends Component {
   render() {
